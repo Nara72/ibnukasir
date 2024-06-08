@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kasir Restoran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aplikasi Kasir Restoran</h1>
+    <label for="item-select">Pilih Item:</label>
+    <select id="item-select">
+        <option value="Nasi Goreng Biasa">Nasi Goreng Biasa - Rp 15000</option>
+        <option value="Nasi Goreng Ayam">Nasi Goreng Ayam - Rp 18000</option>
+        <option value="Nasi Goreng Sosis">Nasi Goreng Sosis - Rp 19000</option>
+        <option value="Nasi Goreng Seafood">Nasi Goreng Seafood - Rp 25000</option>
+        <option value="Nasi Goreng Spesial">Nasi Goreng Spesial - 30000</option>
+        <option value="Es Teh Manis">Es Teh Manis - Rp 5000</option>
+        <option value="Es Jeruk">Es Jeruk - Rp 8000</option>
+        <option value="Teh Botol">Teh Botol - Rp 8000</option>
+    </select>
+    <label for="item-quantity">Jumlah:</label>
+    <input type="number" id="item-quantity" value="1" min="1">
+    <button onclick="addItem()">Tambah Item</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Jumlah</th>
+                <th>Harga per Item</th>
+                <th>Total </th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="item-list">
+        </tbody>
+    </table>
+
+    <p class="total">Total: Rp <span id="total-price">0</span></p>
+
+    <script src="script.js"></script>
+</body>
+<footer>© M.Ibnu Rafi</footer>
+</html>
